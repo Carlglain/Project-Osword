@@ -6,8 +6,8 @@
 .regimg{
     margin-top: 0.3rem;
     margin-bottom: 1rem;
-    width: 575px;
-    height: 570px;
+    width:100%;
+    height: 98%;
     border-radius: 5%;
 }
 /* image container */
@@ -20,16 +20,16 @@
 /* form container */
 .fcontainer{
     padding-left: 10%;
-    
+    padding-top: 4%;
     flex: 0.5;
-    width: 50%;
+    width: 60%;
     margin:5px auto 0
 }
 /* registration/ login buttons */
 .r-l-container{
     display: flex;
     background-color: rgba(47, 50, 125, 0.6);
-    margin: 0.7rem 0rem 3rem 3rem;
+    margin: 0.7rem 0rem 5rem 3rem;
     border-radius: 25px;
     width:10rem;
     padding: 10px 30px;
@@ -85,4 +85,18 @@
     text-decoration: none;
     margin-left: 20%;
     
+}
+.loremtext{
+    margin-bottom: 5%;
+}
+@media (max-width: 768px) {
+    /* Styles for small devices */
+    .icontainer{
+        display: none;
+    }
+    .fcontainer{
+        margin-left: 0;
+        padding: 1%;
+        width: 100%;
+    }
 }
