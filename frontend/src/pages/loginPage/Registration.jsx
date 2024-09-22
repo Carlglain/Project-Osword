@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import './styles.css'
 import RLButton from '../../Components/registration/registration-login-button'
-import Image from '../../Images/classroom-arms-2.avif'
+import Image1 from '../../Images/classroom-arms-2.avif'
+import Image2 from '../../Images/pupilraisinghand2.jpeg'
 function Login() {
   const [isLogin,setIsLogin]=useState(false)
   function handleLogin(e){
@@ -23,7 +24,9 @@ function Login() {
   }
   return (<div className='container'>
     <div className='icontainer'>
-      <img className='regimg' src={Image} alt="Lufy image display" />
+      {isLogin? <img className='regimg' src={Image1} alt="Lufy image display" />:
+       <img className='regimg' src={Image2} alt="Lufy image display" />
+      }
     </div>
     <div className='fcontainer'>
       <h1>Welcome to Lorem i</h1>
